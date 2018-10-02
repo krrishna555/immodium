@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+/**
+ * Partial resets for some Drupal elements.
+ */
+
+ul, ul.menu, ul.menu li, li.leaf
+{
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*
+ * Reset nice menus junk.
+ */
+
+ul.nice-menu-down .menuparent a {
+  padding-right: inherit;
+}
+
+ul.nice-menu a {
+  padding: inherit;
+}
+
+ul.nice-menu li {
+  border: none;
+  border-style: none;
+}

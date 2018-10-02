@@ -1,0 +1,1362 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+ * @file
+ * Imodium theme.
+ *
+ * Important notice: This file comes form the HTML Prototypes. At each prototype
+ * new release, a diff is studied and manually merged into this file to ensure
+ * we get latest theming and we don't loose our changes.
+ *
+ * Minor changes are made directly into this file, and are all prefixed with:
+ * <XXX>: Modified: <reason> so they will appear clearly in diffs.
+ *
+ * Major changes are written in override.css so the diff remains minimal and
+ * easily merged.
+ */
+html {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: Trebuchet MS, Arial, sans-serif;
+}
+
+sup {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    _vertical-align: bottom;
+    position: relative;
+    bottom: 1ex;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 0.75em;
+    background: #ffffff;
+    color: #5f6159;
+}
+
+img {
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    -moz-outline-style: none;
+}
+
+p {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+.container {
+    position: relative;
+    width: 900px !important;
+    height: auto !important;
+    margin: 0px auto;
+    padding: 0 0px;
+}
+
+.container p {
+    text-align: left;
+}
+
+h1 {
+    color: #0077cc;
+    font-size: 3em;
+    padding: 8px 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.footernode .descContainer {
+    margin: 0 10px 0 20px;
+}
+
+.footernode h1 {
+    color: #5f6159;
+    margin: 0px 10px 0 20px;
+    font-size: 2em;
+    padding: 10px 0 0 0;
+    font-weight: normal;
+}
+
+
+
+.privacy-policy-inline {
+    width: 600px;
+    height: 150px;
+    overflow: auto;
+    border: 1px solid #c0c0c0;
+    padding: 0 0 0 5px;
+}
+
+h2 {
+    font-size: 2.5em;
+    padding: 0;
+    font-weight: bold;
+    margin: 0;
+    color: #000000;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 1.33em;
+    color: #0077cc;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1em;
+}
+
+h5 {
+    padding: 0px 0 0 0;
+    margin: 0;
+    font-size: 1.08em;
+}
+
+.clearall {
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    float: none;
+    height: 0;
+}
+
+ul {
+    margin: 0 0 0 0px;
+    padding: 0;
+    list-style-type: none;
+}
+
+/*Form styles*/
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+form p {
+    margin: 1px 0px;
+    padding: 2px 0px;
+}
+
+/*EOF common css*/
+.header {
+    background: url(../images/headerBackground.jpg) no-repeat;
+    height: 100px;
+}
+
+.logoArea {
+    width: 649px;
+    padding: 17px 0 0 17px;
+    float: left;
+}
+
+.searchBoxArea {
+    float: left;
+    width: 202px;
+    padding: 24px 22px 0 10px;
+}
+
+.buttons {
+}
+
+.searchButtons {
+}
+
+.searchButtons li {
+    float: left;
+}
+
+.hcpButton, .hcpButton:hover, .hcpButtonSelected {
+    background: url(../images/hcpButtonBg.jpg) no-repeat;
+    width: 54px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    height: 20px;
+    padding: 2px 0 0 0;
+    margin: 0 15px 0 0;
+}
+
+.hcpButton:hover, .hcpButtonSelected {
+    background: url(../images/hcpButtonBgHover.jpg) no-repeat;
+}
+
+.faqsButton, .faqsButton:hover, .faqsButtonSelected {
+    background: url(../images/faqButtonBg.jpg) no-repeat;
+    width: 54px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    height: 20px;
+    padding: 2px 0 0 0;
+}
+
+.faqsButton:hover, .faqsButtonSelected {
+    background: url(../images/faqButtonBgHover.jpg) no-repeat;
+}
+
+.contactButton, .contactButton:hover, .contactButtonSelected {
+    background: url(../images/contactButton.jpg) no-repeat;
+    width: 79px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    height: 20px;
+    padding: 2px 0 0 0;
+}
+
+.contactButton:hover, .contactButtonSelected {
+    background: url(../images/contactButtonHover.jpg) no-repeat;
+}
+
+.searchBox {
+    padding: 10px 0 0 0;
+}
+
+.searchField {
+    float: left;
+    width: 150px;
+    border: none;
+    background: url(../images/searchFieldBg.jpg) top right;
+    margin: 2px 6px 0 0;
+}
+
+.goButton {
+    float: left;
+    margin: -2px 0 0 0;
+}
+
+.contentArea {
+    padding: 10px 0 0 0;
+}
+
+.bannerArea {
+    background: url(../images/bannerBg.jpg) repeat-y;
+    padding: 0 3px 0 21px;
+}
+
+.bannerLeft {
+    float: left;
+    width: 319px;
+}
+
+.bannerContent {
+    line-height: 14px;
+}
+
+.bannerRight {
+    float: left;
+    width: 557px;
+}
+
+.headerButton {
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+a.call2ActionBtn {
+    background: url(../images/call2ActionBtnLeft.png) transparent no-repeat top left;
+    display: block;
+    float: left;
+    height: 23px; /* Height of button background height */
+    text-decoration: none;
+    padding: 0 0 0 9px;
+    color: #00aaee;
+    font-weight: bold;
+}
+.GoBtn {
+	display:inline;
+	float:left;
+}
+a.GoBtn {
+    background: url(../images/GoBtnLeft.gif) transparent no-repeat top left;
+    display: block;
+    float: left;
+    height: 23px; /* Height of button background height */
+    text-decoration: none;
+    padding: 0 0 0 6px;
+    color: #00aaee;
+    font-weight: bold;
+}
+
+a.GoBtn span {
+    background: url(../images/GoBtnRight.gif) transparent no-repeat top right;
+    display: block;
+    padding: 0px 18px 0px 6px;
+    line-height: 23px;
+}
+
+a.GoBtn:hover { /* Hover state CSS */
+    background-position: bottom left;
+}
+
+a.GoBtn:hover span { /* Hover state CSS */
+    background-position: bottom right;
+    color: #ffffff;
+}
+
+a:link.GoBtn, a:visited.GoBtn, a:active.GoBtn {
+    color: #00aaee; /*button text color*/
+}
+
+.headerButton .call2ActionBtn {
+    margin: 0 0 10px 0;
+}
+
+a:link.call2ActionBtn, a:visited.call2ActionBtn, a:active.call2ActionBtn {
+    color: #00aaee; /*button text color*/
+}
+
+a.call2ActionBtn span {
+    background: url(../images/call2ActionBtnRight.png) transparent no-repeat top right;
+    display: block;
+    padding: 0px 30px 0px 6px;
+    line-height: 23px;
+}
+
+a.call2ActionBtn:hover { /* Hover state CSS */
+    background-position: bottom left;
+}
+
+a.call2ActionBtn:hover span { /* Hover state CSS */
+    background-position: bottom right;
+    color: #ffffff;
+}
+
+.bannerBottomLinks {
+}
+
+.bannerBottomLinksLeft {
+    float: left;
+    width: 20px;
+    background: url(../images/bannerBottomBgLeft.jpg) no-repeat;
+    height: 33px;
+}
+
+.bannerBottomLinksMiddle {
+    float: left;
+    background: url(../images/bannerBottomBgMiddle.jpg) repeat-x;
+    height: 27px;
+    width: 862px;
+    padding: 6px 0 0 0;
+}
+
+.bannerBottomLinksRight {
+    float: left;
+    width: 18px;
+    background: url(../images/bannerBottomBgRight.jpg) no-repeat;
+    height: 33px;
+}
+
+a.secondaryNavButton {
+    background: url(../images/secondaryNavButtonLeft.jpg) transparent no-repeat top left;
+    display: block;
+    float: left;
+    height: 20px; /* Height of button background height */
+    text-decoration: none;
+    padding: 0 0 0 6px;
+    font-size: 1.08em;
+    color: #0077cc;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+}
+
+a:link.secondaryNavButton, a:visited.secondaryNavButton, a:active.secondaryNavButton {
+    color: #00aaee; /*button text color*/
+}
+
+a.secondaryNavButton.active {
+    background-position: bottom left;
+}
+
+a.secondaryNavButton.active span {
+    background-position: bottom right;
+    color: #FFF;
+}
+
+a.secondaryNavButton span {
+    background: url(../images/secondaryNavButtonRight.jpg) transparent no-repeat top right;
+    display: block;
+    padding: 0px 6px 0px 0px;
+    line-height: 20px;
+}
+
+a.secondaryNavButton:hover { /* Hover state CSS */
+    background-position: bottom left;
+}
+
+a.secondaryNavButton:hover span { /* Hover state CSS */
+    background-position: bottom right;
+    color: #ffffff;
+}
+
+.promosSection {
+    padding: 20px 0 0 0;
+}
+
+.promoBox1, .promoBox2, .promoBox3 {
+    float: left;
+    width: 286px;
+    margin: 0 21px 0 0;
+}
+
+.promoBox3 {
+    margin: 0;
+}
+
+.promoBoxTop {
+    background: url(../images/promoBoxTopBg.png) no-repeat;
+    padding: 0 10px;
+    min-height: 130px;
+}
+
+.promoLeft {
+    float: left;
+    width: 150px;
+    padding: 0 8px 0px 0;
+}
+
+.promoRight {
+    float: left;
+    width: 108px;
+    padding: 10px 0 0 0;
+}
+
+.promoBoxBottom {
+    background: url(../images/promoBoxBottom.jpg) no-repeat;
+    height: 35px;
+    padding: 0 0 0 10px;
+}
+
+.promoBoxBottom .headerButton {
+    padding: 0;
+}
+
+.promoSmallTop .headerButton {
+    padding: 0;
+}
+
+.footerArea {
+}
+
+.sitemapLinks {
+    margin: 20px 0 0 0;
+}
+
+.sitemapLinksTop {
+    background: url(../images/footerLinksTop.jpg) no-repeat;
+    height: 17px;
+    font-size: 0;
+}
+
+.sitemapLinksMiddle {
+    background-color: #cee5f5;
+    min-height: 191px;
+    padding: 0 22px;
+}
+
+.sitemapLinksBottom {
+    background: url(../images/footerLinksBottom.jpg) no-repeat;
+    height: 16px;
+}
+
+.sitemapLinksMiddle li {
+    padding: 3px 0 0 0;
+}
+
+.sitemapLinks1, .sitemapLinks2, .sitemapLinks3, .sitemapLinks4, .sitemapLinks5 {
+    float: left;
+    padding: 0 15px 0 0;
+}
+
+.sitemapLinks1 {
+    width: 156px;
+}
+
+.sitemapLinks2 {
+    width: 168px;
+}
+
+.sitemapLinks3 {
+    width: 166px;
+}
+
+.sitemapLinks4 {
+    width: 168px;
+}
+
+.sitemapLinks5 {
+    width: 123px;
+}
+
+.sitemapLinksMiddle a {
+    font-size: 0.91em;
+}
+
+.sitemapLinksMiddle a.mainNav {
+    color: #00aaee;
+    text-decoration: underline;
+}
+
+.sitemapLinksMiddle a.subNav {
+    color: #666666;
+}
+
+.sitemapLinksMiddle ul ul li {
+    padding: 0 0 0 10px;
+}
+
+.footer {
+    padding: 15px 22px 70px 22px;
+}
+
+.footer a {
+    color: #00aaee;
+    text-decoration: underline;
+    padding: 0 10px 0 0;
+    font-size: 0.91em;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footerPara {
+    padding: 5px 0 0 0;
+}
+
+/*Middle Content Start Here*/
+.mainContentArea {
+    background: url(../images/bannerBg.jpg) repeat-y;
+    width: 900px;
+}
+
+.mainContentAreaBottom {
+    background: url("../images/mainContentAreaBottom.gif") no-repeat;
+    height: 20px;
+    clear: both;
+}
+
+/*Middle Content Left Start Here*/
+/*Middle Content Left Ends Here*/
+/*Middle Content Right Start Here*/
+.mainContentAreaRight {
+    float: left;
+    width: 670px;
+    position: relative;
+}
+
+.headingOverImage {
+    color: #0077CC;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 10px 0;
+    position: absolute;
+    top: 40px;
+}
+
+.headingViolet {
+    color: #90C;
+    font-size: 1.16em;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.mainContentAreaRight .descContainer {
+    float: left;
+    margin-right: 10px;
+    width: 400px;
+}
+
+.videoThumbContainer {
+    padding-top: 10px;
+}
+
+.videoThumbContainer .videoThumb {
+    margin-top: 10px;
+}
+
+.button {
+    margin-top: 20px;
+    float: left;
+}
+
+/* PRI: Modified. */
+.button a:link, .button a:visited {
+    display: block;
+    font-size: 1.08em;
+    font-weight: bold;
+    background: url(../images/buttonBackground.gif) left top;
+    background-repeat: no-repeat;
+    color: #0AE;
+    padding-left: 10px;
+}
+
+/* PRI: Modified. */
+.button a span {
+    background: url(../images/buttonBackground.gif) right top;
+    display: block;
+    padding: 2px 20px 3px 0px;
+}
+
+.headingBlue {
+    font-size: 3em;
+    color: #07C;
+    margin: 10px 0px;
+}
+
+/*Blue Promo Container Starts*/
+.BluePromoContainer {
+    background: url(../images/BluePromoContainerTop.gif) repeat-x top #00aaee;
+    margin-right: 20px;
+    margin-top: 20px;
+    /*position:relative;*/
+}
+
+.BluePromoContainerBottom {
+    background: url(../images/BluePromoContainerBottom.gif) no-repeat bottom left;
+    height: 10px;
+}
+
+.CallOut {
+    width: 240px;
+    float: left;
+    padding: 20px 20px 10px 20px;
+}
+
+.CallOutHeading {
+    background: url(../images/CallOutTop.gif) no-repeat;
+}
+
+.CallOutBottom {
+    background: url(../images/CallOutBottom.gif) bottom left no-repeat;
+    height: 50px;
+}
+
+.CallOutHeading {
+    font-size: 2.5em;
+    line-height: 28px;
+    padding: 25px 20px 0px 20px;
+}
+
+.rightContent h5 {
+    font-size: 3em;
+    color: #ffffff;
+    padding: 20px 20px 0px 0px;
+    font-weight: normal;
+    _height: 1px;
+}
+
+.rightContent p {
+    color: #FFFFFF;
+    font-size: 1.33em;
+    line-height: 18px;
+    padding-right: 40px;
+}
+
+/* PRI: Modified: Removed conflicting directives. */
+.BluePromoContainer a.call2ActionBtn {
+    background: url(../images/BluePromoCall2ActionBtn.gif) transparent no-repeat top left;
+}
+
+.BluePromoContainer a.call2ActionBtn span {
+    background: url(../images/BluePromoCall2ActionBtn.gif) transparent no-repeat top right;
+}
+
+.BluePromoContainer a.call2ActionBtn:hover {
+    background: url(../images/BluePromoCall2ActionBtn.gif) transparent no-repeat bottom left;
+}
+
+.BluePromoContainer a.call2ActionBtn:hover span {
+    background: url(../images/BluePromoCall2ActionBtn.gif) transparent no-repeat bottom right;
+}
+
+/*Blue Promo Container Ends*/
+/*Big Blue Promo Container Starts*/
+.BigBluePromoContainer {
+    background: url(../images/BluePromoContainerImage607.jpg) no-repeat top left #ffffff;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 343px;
+}
+
+.BigBluePromoContainerBottom {
+    background: url(../images/BluePromoContainerBottom.gif) no-repeat bottom left;
+    height: 10px;
+}
+
+.BigBluePromoContainer .CallOut {
+    width: 323px;
+    padding: 20px 20px 10px 20px;
+}
+
+.BigBluePromoContainer .CallOutHeading {
+    background: url(../images/CallOutTop2.gif) no-repeat;
+}
+
+.BigBluePromoContainer .CallOutBottom {
+    background: url(../images/CallOutBottom2.gif) bottom left no-repeat;
+    height: 30px;
+}
+
+.BigBluePromoContainer .CallOutHeading {
+    font-size: 3em;
+    line-height: 30px;
+    padding: 25px 20px 0 60px;
+}
+
+.BigBluePromoContainer .rightContent h5 {
+    background: url("../images/false.gif") no-repeat scroll left center transparent;
+    color: #FFFFFF;
+    font-size: 3em;
+    font-weight: normal;
+    margin-left: 20px;
+    padding: 0 20px 0 50px;
+}
+
+.BigBluePromoContainer .rightContent p {
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 18px;
+    padding: 10px 300px 10px 20px;
+}
+
+/*Big Blue Promo Container Ends*/
+/*Fact List Starts*/
+.factList {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.factListCallOut {
+    background: url(../images/CallOutTop3.gif) top no-repeat;
+    float: left;
+    width: 171px;
+    margin-right: 20px;
+}
+
+.factListCallOutHeading {
+    font-size: 1.5em;
+    line-height: 18px;
+    padding: 20px 20px 0px 20px;
+}
+
+.factListCallOutBottom {
+    background: url(../images/CallOutBottom3.gif) top no-repeat;
+    height: 38px;
+}
+
+.factDesc {
+    margin-left: 190px;
+}
+
+.factHeading {
+    font-size: 2em;
+    color: #0077CC;
+    font-weight: bold;
+    padding: 0px 0px 10px 35px;
+    _height: 1px;
+}
+
+.factHeadingTrue {
+    background: url(../images/true.gif) no-repeat;
+}
+
+.factHeadingFalse {
+    background: url(../images/false2.gif) no-repeat;
+}
+
+/*Fact List Ends*/
+/*Bottom Promo Container Starts*/
+.bottomPromoContainer {
+    padding-top: 20px;
+}
+
+.promoBig {
+    float: left;
+    width: 390px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.promoBigTop {
+    background: url(../images/promoBgTop.jpg) no-repeat top left;
+    padding: 0 23px;
+    height: 260px;
+}
+
+.promoBigLeftPart {
+    float: left;
+    width: 151px;
+}
+
+.promoBigRightPart {
+    float: right;
+    width: 193px;
+    min-height: 220px;
+}
+
+.promoSmall h6, .promoBig h6 {
+    font-size: 1.33em;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #666;
+    margin: 0;
+    line-height: 17px;
+}
+
+.promoBigBottom {
+    background: url(../images/promoBgBottom.jpg) no-repeat;
+    height: 19px;
+}
+
+/* PRI: Modified: Removed a directive with a high top margin, see
+ overrides.css for this part theming, in "Misc" section. */
+.promoSmall .call2ActionBtn {
+    margin: 20px 0 0 0;
+}
+
+.promoSmall {
+    float: left;
+    width: 240px;
+}
+
+.videoThumbContainer .promoSmallTop {
+    height: auto;
+}
+
+.videoThumbContainer .promoSmallTop a {
+    margin: 0;
+}
+
+.promoSmallTop {
+    background: url(../images/promoSmallTop.jpg) no-repeat;
+    padding: 0 20px;
+    height: 260px;
+}
+
+.promoSmallTop p {
+    padding: 12px 0 10px 0;
+}
+
+.promoSmallBottom {
+    background: url(../images/promoBgSmallBottom.jpg) no-repeat;
+    height: 19px;
+}
+
+.promoSmall .button {
+    margin: 10px 0 0 0;
+}
+
+/*Bottom Promo Container Ends*/
+.howToList {
+    margin: 10px 0px 10px 10px;
+}
+
+.howToList dt {
+    background: url("../images/bulletListViolet.gif") no-repeat scroll left 5px transparent;
+    color: #9900CC;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 3px 0px 3px 15px;
+    _height: 1px;
+}
+
+.howToList dd {
+    margin-left: 0px;
+    line-height: 14px;
+}
+
+.bulletListViolet {
+    margin: 20px 0px 10px 10px;
+}
+
+.bulletListViolet li {
+    background: url(../images/bulletListViolet.gif) no-repeat top left;
+    padding: 0px 0px 10px 10px;
+}
+
+.logoList li {
+    float: left;
+    margin: 20px -10px 5px 0;
+}
+
+.margin-top20 {
+    margin-top: 20px;
+}
+
+.margin-right20 {
+    margin-right: 20px;
+}
+
+.margin-bottom20 {
+    margin-bottom: 10px;
+}
+
+.margin-left-10 {
+    margin-left: -10px !important;
+}
+
+a.call2ActionBtn span.pad15 {
+    padding: 0 15px 0 2px;
+}
+
+.relatedLinks {
+    float: left;
+    padding: 25px 0px 0px 20px;
+}
+
+.relatedLinks a:link, .relatedLinks a:visited {
+    color: #00aaee;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.relatedLinks ul li, .relatedLinks .headingGray {
+    margin-bottom: 3px;
+}
+
+.headingGray {
+    color: #999999;
+    font-size: 1.16em;
+    font-weight: bold;
+}
+
+.faqBlock, .glossaryBlock {
+    margin-top: 20px;
+    background: url(../images/faqBlockBackground.gif) no-repeat;
+    padding: 15px 40px 0px 20px;
+    color: #666666;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.faqBlock .title, .glossaryBlock .title{
+    font-size: 2em;
+    color: #0077cc;
+    float: left;
+    background: url(../images/bulletBigViolet.gif) right center no-repeat;
+    padding-right: 15px;
+}
+
+.faqBlock .headingGray, .glossaryBlock .headingGray {
+    clear: both;
+    padding: 5px 0px;
+    color: #666666;
+}
+
+.faqBlock p, .glossaryBlock p {
+    padding-bottom: 5px;
+}
+
+.phrase {
+    font-size: 1.16em;
+    font-weight: bold;
+    width: 150px;
+    vertical-align: top;
+    padding: 10px 0px 0px 0px;
+}
+
+.phraseMeaning {
+    padding: 10px 0px 0px 0px;
+    vertical-align: top;
+}
+
+/*Contact Us Starts Here*/
+.contactUsArea {
+    padding: 20px;
+    width: 620px;
+}
+
+.contactUsArea h1, .contactUsArea .title {
+    font-size: 1.3em;
+    color: dd;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 5px 0;
+    color: #666666;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+
+.contactUsArea label {
+    float: left;
+    width: 120px;
+    padding-top: 6px;
+}
+
+.textInput, .textArea, .textAreaBig {
+    background: url(../images/formInputsBackground.gif) repeat-x top;
+    border: 1px solid #cecece;
+    width: 180px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 3px;
+    font-size: 1em;
+    color: #666666;
+}
+
+.textArea {
+    width: 480px;
+    height: 120px;
+}
+
+.textAreaBig {
+    width: 600px;
+    height: 100px;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+.marginTopBottom10 {
+    margin: 10px 0px;
+}
+
+.privacyPolicy {
+    font-weight: bold;
+    color: #00AAEE;
+    text-decoration: underline;
+}
+
+.errorMessage {
+    background: url("../images/errorMessageTop.gif") no-repeat scroll left top #C20000;
+    color: #FFFFFF;
+    margin: 10px 0;
+    width: 608px;
+}
+
+.errorMessageBottom {
+    background: url(../images/errorMessageBottom.gif) bottom no-repeat;
+    padding: 5px 10px;
+}
+
+.bulletListBlue li {
+    background: url(../images/bulletListBlue.gif) no-repeat top left;
+    padding: 5px 0px 0px 10px;
+}
+
+.contactUsArea ul.bulletListBlue {
+    margin-bottom: 20px;
+}
+
+label.error {
+    color: #c20000;
+    padding-left: 205px;
+}
+
+#edit-captcha-response-wrapper label.error{
+	padding-left:0;
+}
+.descContainerFull {
+}
+
+/*Contact Us Ends Here*/
+/*Middle Content Right Ends Here*/
+/*Middle Content Ends Here*/
+/*HCP Page Starts*/
+.hcpPage {
+    padding-bottom: 30px;
+}
+
+.hcpHeading {
+    background: url("../images/hcpHeadingImage.jpg") no-repeat scroll top right transparent;
+    font-size: 4.4em;
+    letter-spacing: -1px;
+    line-height: 55px;
+    margin-right: 3px;
+    padding: 80px 300px 90px 41px;
+}
+
+.hcpDesc {
+    padding: 30px 110px 0 41px;
+}
+
+.hcpList {
+    margin: 20px 110px 0 41px;
+}
+
+.hcpThumb {
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    width: 70px;
+}
+
+.hcpThumbDesc {
+    float: right;
+    text-align: left;
+    width: 89%;
+}
+
+.hcpTitle {
+    color: #9900CC;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
+
+.hcpList ul {
+    margin-top: 5px;
+}
+
+.hcpList a:link, .hcpList a:visited, .hcpList a:active, .hcpList a:hover {
+    color: #0099FF;
+}
+
+.hcpdescContainer {
+    width: 900px !important;
+}
+
+/*HCP Page Ends*/
+/* Product Panel Start*/
+.productPanel {
+    background: url(../images/productPanelBackground.jpg) repeat-y;
+    margin-top: 40px;
+    width: 650px;
+}
+
+.productPanelTab li {
+    float: left;
+    text-align: center;
+}
+
+.productPanelTab li {
+    width: 216px;
+    height: 206px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.productPanelTab li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 124px 19px 0;
+    outline: none;
+}
+
+.productPanelTab li a img {
+    display: none;
+}
+
+.tab1 {
+    background: url(../images/productPanelTabsBackground.jpg) 0px 0px no-repeat;
+}
+
+.tab2 {
+    background: url(../images/productPanelTabsBackground.jpg) repeat scroll 0px -206px transparent;
+}
+
+.tab3 {
+    background: url(../images/productPanelTabsBackground.jpg) repeat scroll 0px -412px transparent;
+}
+
+.productDesc {
+    background: url(../images/productPanelBottomBackground.gif) no-repeat scroll bottom transparent;
+    padding-bottom: 40px;
+}
+
+.productImage {
+    float: left;
+    height: 230px;
+    padding: 20px 0 0 40px;
+    width: 240px;
+}
+
+.productDetails {
+    width: 300px;
+    float: left;
+    padding-top: 25px;
+}
+
+.productDetails p {
+    margin-top: 20px;
+}
+
+.productTitle {
+    color: #9900cc;
+}
+
+.productTitle small {
+    display: block;
+    font-size: .5em;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.productDetails ul {
+    margin-top: 10px;
+	margin-left:20px;
+	
+}
+
+.productDetails a:link {
+    color: #0099FF;
+    padding-left:0px;
+}
+
+/* Product Panel End*/
+
+
+
+
+/*Registration Form CSS*/
+
+.registratioForm {
+    background: url("../images/registratiohFormBgBottom.gif") no-repeat scroll left bottom #B9E7FB;
+    color: #2482D2;
+    width: 610px;
+    margin-right: 20px;
+    padding: 20px 20px 20px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.registratioForm .registratioFormTitle {
+    background: url("../images/registratiohFormBgTop.png") no-repeat scroll left top;
+    color: #73B8E8;
+    font-size: 2em;
+    font-weight: bold;
+    left: 0;
+    padding-right: 30px;
+    padding-top: 15px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 620px;
+}
+
+.registratioForm .mandatoryMsg strong, .registratioForm label{
+	display:block;
+	}
+	
+.mandatoryMsg{
+height:20px;
+}
+.mandatorySpace{
+height:5px;
+}
+.registratioForm .field-item{
+	margin:10px 0 15px;
+}
+
+.registratioForm .captcha {
+    margin: 20px 0;
+}
+
+.registratioForm .submit {
+    float: right;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+
+.registratioForm .mandatory{
+	color:red;
+}
+
+.registratioForm a:link, .registratioForm a:visited, .registratioForm a:hover, .registratioForm a:active{
+	color: #2482D2;
+	text-decoration:underline;
+}
+
+.registratioForm input, .registratioForm select, .registratioForm textarea{
+	font-size:1em;
+	padding:0.1em 0.1em 0.2em 0.2em;
+}
+
+.registratioForm textarea{
+	font-size:1em;
+	padding:0.1em 0.1em 0.2em 0.2em;
+	font-family: Trebuchet MS, Arial, sans-serif;	
+}
+.registratioForm #edit-submit{
+    float: right;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+
+#nj-contact-competition-form .form-submit {
+    background: url("../images/buttonSubmit.gif") no-repeat scroll 0 0 transparent;
+}
+#jnj-contact-competition-form .registratioForm .form-item {
+	margin-top: 0;
+}
+
+
+.form-item label {
+    font-weight: normal !important;
+}
+
+select {
+  z-index: none;
+  filter:none;
+}
+
+.competition-label{
+float:left;
+width:200px;
+padding-right: 5px;
+}
+
+.competition-label-subscribe{
+float:left;
+width:260px;
+padding-right: 5px;
+}
+
+.field-item-com-terms{
+float:left;
+margin-top: -87px;
+padding-left: 480px;
+}
+	
+#edit-livein-Yes-wrapper,#edit-terms-I-accept-wrapper,#edit-livein-No-wrapper,#edit-terms-I-do-not-accept-wrapper
+{
+	display: inline;
+}
+
+.descComContainer .descContainer{
+width: 620px;
+}
+
+.descComContainer strong{
+    color: #00AAEE;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+#edit-captcha-image-wrapper,#edit-captcha-response-wrapper{
+padding-left: 200px;
+}
+
+#edit-subscribe-wrapper{
+padding-left: 275px;
+}
+
+.field-item-com-terms .error{
+padding-left: 0px;
+}
+

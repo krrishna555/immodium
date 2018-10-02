@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+/**
+ * @file
+ * Specific typo styles for content editing.
+ */
+/* This will apply to all site. */
+p {
+    text-align: justify;
+    padding: 0.6em 0px 0.6em 0px;
+}
+
+.descContainer h2, .field-type-text h2 {
+    color: #90C;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.descContainer h4, .field-type-text h4 {
+    color: #90C;
+    font-size: 1.33em;
+    font-weight: normal;
+}
+
+.field-type-text h3 {
+    color: #90C;
+    font-size: 1.16em;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.field-type-text ul li {
+    /*
+     * This was overriden in the style.css file.
+     *
+     background: url(../images/bulletListBlue.gif) no-repeat top left;
+     padding: 5px 0px 0px 10px;
+     */
+    background: url(../images/bulletListViolet.gif) no-repeat top left;
+    padding: 0px 0px 10px 10px;
+}
+
+.field-type-text ul {
+    margin: 20px 0px 10px 10px;
+}

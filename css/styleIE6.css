@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.searchBox{
+	margin:-25px 0 0 0;
+}
+.searchField{{
+	width:158px;
+}
+.footerLinksMiddle{
+	height:191px;
+}
+.promoBoxTop{
+	height:140px;
+}
+.bannerBottomLinks{
+	margin:-2px 0 0 0;
+}
+
+p{height:1%;}
+
+#region-left {
+    float: left;
+    width: 214px;
+    padding-right: 10px;
+}
+
+#region-top-menu li{
+	display:inline;
+	float:left;
+}

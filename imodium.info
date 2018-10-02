@@ -1,0 +1,29 @@
+name = Imodium
+description = Imodium theme.
+version = VERSION
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/reset.css
+; Original CSS file from the HTML prototypes.
+stylesheets[all][] = css/style.css
+; Adapted CSS code to fit with Drupal blocks and menus.
+stylesheets[all][] = css/overrides.css
+; Specific content typo CSS directives.
+stylesheets[all][] = css/typo.css
+scripts[] = scripts/imodium.js
+scripts[] = scripts/front-flash.js
+scripts[] = scripts/jquery.validate.min.js
+scripts[] = scripts/jquery.cookie.js
+; Custom video handling.
+scripts[] = scripts/ac_fl_flashvideo.js
+; Mandatory checkbox handling
+scripts[] = scripts/mandatorycheck.js
+regions[header] = Header
+regions[top_menu] = Top menu
+regions[left] = Left
+regions[right] = Right
+regions[content] = Content
+regions[promostionSection] = Promo Section Home Page
+regions[footer] = Footer
+regions[sitemapLinks] = Sitemap Links 
+regions[bannerSection] = Banner Section

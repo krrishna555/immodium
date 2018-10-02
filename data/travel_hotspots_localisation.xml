@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- 
+To implement multiple languages copy all code between and including <territory id='uk'>... </territory> tags and apply a unique id such as 'de' for German or 'fr' for French.
+These id's are then passed to the flash movie via flashVars (SEE: index.html) e.g.
+
+...<script type="text/javascript">		
+		var so = new SWFObject("IMM004_map_rollovers_07_NEW.swf", "flash", "670", "300", "9", "#FFFFFF"); 
+		so.addVariable("territory","uk");
+		so.addVariable("xmlPath", "xml/travel_hotspots_localisation.xml");
+		so.useExpressInstall('expressinstall.swf'); 
+		so.write("flashcontent");		
+	</script>...
+	
+Aternatively leave this xml as is and simply insert translations into <[CDATA[]]> sections 
+and then specify a language folder in the directory structure via the xmlPath variable shown above
+
+Territories: 
+uk = English International/UK
+-->
+<travel_hotspots>
+	<territory id='uk'>
+		<general id='general'>
+			<title>
+				<![CDATA[Travel hot spots]]>
+			</title>
+			<subtitle>
+				<![CDATA[Roll your cursor over the map to see if you are going to a hot spot area]]>
+			</subtitle>
+		</general>
+		<oceans id='oceans'>
+			<!-- Numbered as seen on screen left to right -->
+			<ocean id='1'>
+				<![CDATA[North Pacific Ocean]]>
+			</ocean>
+			<ocean id='2'>
+				<![CDATA[South Pacific Ocean]]>
+			</ocean>
+			<ocean id='3'>
+				<![CDATA[North Atlantic Ocean]]>
+			</ocean>
+			<ocean id='4'>
+				<![CDATA[Southern Ocean]]>
+			</ocean>
+			<ocean id='5'>
+				<![CDATA[Indian Ocean]]>
+			</ocean>
+			<ocean id='6'>
+				<![CDATA[Arctic Ocean]]>
+			</ocean>
+			<ocean id='7'>
+				<![CDATA[North Pacific Ocean]]>
+			</ocean>
+		</oceans>
+		<countries id='countries'>
+			<!-- Numbered as seen on screen left to right -->
+			<country id='1'>
+				<![CDATA[Mexico]]>
+			</country>
+			<country id='2'>
+				<![CDATA[United States]]>
+			</country>
+			<country id='3'>
+				<![CDATA[Argentina]]>
+			</country>
+			<country id='4'>
+				<![CDATA[Peru]]>
+			</country>
+			<country id='5'>
+				<![CDATA[Brazil]]>
+			</country>
+			<country id='6'>
+				<![CDATA[Greenland]]>
+			</country>
+			<country id='7'>
+				<![CDATA[United Kingdon]]>
+			</country>
+			<country id='8'>
+				<![CDATA[Senegal]]>
+			</country>
+			<country id='9'>
+				<![CDATA[Algeria]]>
+			</country>
+			<country id='10'>
+				<![CDATA[France]]>
+			</country>
+			<country id='11'>
+				<![CDATA[Sweden]]>
+			</country>
+			<country id='12'>
+				<![CDATA[South Africa]]>
+			</country>
+			<country id='13'>
+				<![CDATA[Zambia]]>
+			</country>
+			<country id='14'>
+				<![CDATA[Egypt]]>
+			</country>
+			<country id='15'>
+				<![CDATA[Poland]]>
+			</country>
+			<country id='16'>
+				<![CDATA[Sudan]]>
+			</country>
+			<country id='17'>
+				<![CDATA[Syria]]>
+			</country>
+			<country id='18'>
+				<![CDATA[Yemen]]>
+			</country>
+			<country id='19'>
+				<![CDATA[Madagascar]]>
+			</country>
+			<country id='20'>
+				<![CDATA[Kazakhstan]]>
+			</country>
+			<country id='21'>
+				<![CDATA[Pakistan]]>
+			</country>
+			<country id='22'>
+				<![CDATA[India]]>
+			</country>
+			<country id='23'>
+				<![CDATA[Russia]]>
+			</country>
+			<country id='24'>
+				<![CDATA[China]]>
+			</country>
+			<country id='25'>
+				<![CDATA[Indonesia]]>
+			</country>
+			<country id='26'>
+				<![CDATA[Mongolia]]>
+			</country>
+			<country id='27'>
+				<![CDATA[Australia]]>
+			</country>
+			<country id='28'>
+				<![CDATA[Korea]]>
+			</country>
+			<country id='29'>
+				<![CDATA[Japan]]>
+			</country>
+			<country id='30'>
+				<![CDATA[New Zealand]]>
+			</country>
+		</countries>
+		<hotspots id='hotspots'>
+			<!-- Numbered as seen on screen left to right -->
+			<hotspot id='1'>
+				<continent>
+					<![CDATA[South America]]>
+				</continent>
+				<risk>
+					<![CDATA[Medium Risk]]>
+				</risk>
+			</hotspot>
+			<hotspot id='2'>
+				<continent>
+					<![CDATA[South America]]>
+				</continent>
+				<risk>
+					<![CDATA[High Risk]]>
+				</risk>
+			</hotspot>
+			<hotspot id='3'>
+				<continent>
+					<![CDATA[Southern Europe]]>
+				</continent>
+				<risk>
+					<![CDATA[Medium Risk]]>
+				</risk>
+			</hotspot>
+			<hotspot id='4'>
+				<continent>
+					<![CDATA[Africa]]>
+				</continent>
+				<risk>
+					<![CDATA[HIgh Risk]]>
+				</risk>
+			</hotspot>
+			<hotspot id='5'>
+				<continent>
+					<![CDATA[South Africa]]>
+				</continent>
+				<risk>
+					<![CDATA[Medium Risk]]>
+				</risk>
+			</hotspot>
+			<hotspot id='6'>
+				<continent>
+					<![CDATA[Middle East]]>
+				</continent>
+				<risk>
+					<![CDATA[Medium Risk]]>
+				</risk>
+			</hotspot>
+			<hotspot id='7'>
+				<continent>
+					<![CDATA[Russia]]>
+				</continent>
+				<risk>
+					<![CDATA[Medium Risk]]>
+				</risk>
+			</hotspot>
+			<hotspot id='8'>
+				<continent>
+					<![CDATA[Asia]]>
+				</continent>
+				<risk>
+					<![CDATA[High Risk]]>
+				</risk>
+			</hotspot>
+		</hotspots>
+	</territory>
+</travel_hotspots>

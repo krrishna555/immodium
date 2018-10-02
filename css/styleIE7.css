@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+div.searchBoxArea .searchBox {
+    margin: -25px 0 0 0;
+}
+
+div.searchBoxArea div.buttons {
+    height: 42px
+}
+
+sup {
+    font-size: 0.9em;
+}
+
+.jnj-overlay .form-item label {
+    float: left;
+    width: 200px;
+    height: 25px;
+}
+
+.jnj-overlay .form-item input[type = text] {
+    width: 300px;
+	float:left;
+}
+
+#edit-validation-wrapper label {
+    width: auto;
+    float: none;
+}
+
+.bannerArea {
+    border-left: 3px solid #cceef8;
+    border-right: 3px solid #cceef8;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+sup {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    _vertical-align: bottom;
+    position: relative;
+    bottom: 1ex;
+}
+
+.bannerLeft {
+    width: 316px;
+}
+
+.bannerRight {
+    margin-right: 3px;
+}
+
+
+
+/*.descContainer .productDetails li{
+	list-style:none !important;
+	list-style-image:none;
+}*/
+
+/*
+ .promoSmallTop{
+ z-index:4000;
+ }*/ 
+#flash_0 div.headerButton {
+  position: relative;
+  float:none;
+  clear: both;
+  padding-top: 0;
+}
